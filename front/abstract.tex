@@ -1,0 +1,25 @@
+% !TeX root = ../main.tex
+
+% 中文摘要
+% Chinese Abstract
+\begin{abstract}
+
+持續成長的電力需求以及民眾環保意識抬頭，加上傳統集中式電力系統的缺點日漸浮現，各國紛紛開始關注能夠充分利用再生能源且具有良好環境效益的分散式發電（Distributed Generation, DG）技術。
+
+本研究以虛擬電廠（Virtual Power Plant, VPP）概念整合分散式能源的風力電場與作為儲能裝置的電動汽車，考慮時間電價進行調度規劃來參與電力市場交易，並透過模型預測控制（Model Predictive Control, MPC）在有限時域下針對動態變化的虛擬電廠進行發電與儲能規劃來獲得最佳收益；其中，為鼓勵電動汽車整合於虛擬電廠中參與電力市場交易，本研究中提出以額外充電作為紅利取代直接給予金錢的鼓勵方式；此外，本研究提出了基於小波轉換對時間序列進行訊號分解，並結合傳統時間序列預測與支持向量迴歸預測的小波分解 ARIMA-SVR 組合預測模型，用以根據歷史風速資料預測風力電場發電。
+
+並於案例模擬中使用我國\uline{東吉島}測站 2018 年間的歷史風速資料為基礎，進行短期風力預測與收益模型分析後，驗證了此最佳化收益方案的可行性。分析結果亦顯示，短期風速預測中採用小波分解 ARIMA-SVR 組合預測模型相較傳統單一預測模型在預測能力上有小幅度提升，而使用了電動汽車作為儲能裝置的虛擬電廠能夠獲取更高的收益。
+
+\end{abstract}
+
+% 英文摘要
+% English Abstract
+\begin{abstract*}
+
+With the increasing demand for electricity and the rising of public awareness of environmental protection, as well as the increasingly emerging disadvantages of traditional centralized power system, more and more attention has been paid to distributed generation (DG) by each county, which can make full use of renewable energy and has good environmental benefits.
+
+In this study, the concept of Virtual Power Plant (VPP) was applied to integrate with wind farms as distributed generation and electric vehicles as energy storage devices, participating in electricity market transactions by considering Time of Use Price (TOU) for scheduling. Model Predictive Control (MPC) was used to maximize benefits from power generation and storage planning for dynamic changed virtual power plants in finite time domain. Of which, in order to integrate electric vehicles into virtual power plants and participate in electricity market transactions, the compensation payment mode of providing free charging instead of direct giving of money was adopted in this study. Furthermore, the signal decomposition of time series based on wavelet transform was proposed in this study, and the traditional time series prediction and wavelet decomposition ARIMA-SVR combination prediction model for support vector regression  prediction were combined to predict wind farm power generation based on historical wind speed data.
+
+Based on the historical wind speed data of \uline{DONGJIDAO} in 2018 in the case simulation, the feasibility of this profit optimization model was verified after applying the short-term wind power forecast and profit model. The analysis results also showed that compared with the traditional single prediction model, there is a small increase by adopting ARIMA-SVR combined prediction model with wavelet decomposition in the short-term wind power forecast. While the virtual power plant using electric vehicles as energy storage devices could obtain higher profits.
+
+\end{abstract*}

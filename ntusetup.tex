@@ -1,0 +1,75 @@
+% !TeX root = ./main.tex
+
+% --------------------------------------------------
+% 資訊設定（Information Configs）
+% --------------------------------------------------
+
+\ntusetup{
+  university*   = {National Taiwan University},
+  university    = {國立臺灣大學},
+  college       = {工學院},
+  college*      = {College of Engineering},
+  institute     = {工業工程學研究所},
+  institute*    = {Institute of Industrial Engineering},
+  title         = {基於短期風速預測進行整合風力電場分散式發電與電動汽車作為儲能設備的虛擬電廠收益分析},
+  title*        = {Profit Analysis of Virtual Power Plant Integrated with Wind Farms as Distributed Generation and Electric Vehicles as Energy Storage Device Based on Short-Term Wind Speed Prediction},
+  author        = {彭新翔},
+  author*       = {Hsin-Hsiang Peng},
+  ID            = {R05546030},
+  advisor       = {吳文方},
+  advisor*      = {Wen-Fang Wu},
+  date          = {2020-05-01},         % 若註解掉，則預設為當天
+  oral-date     = {2020-05-01},         % 若註解掉，則預設為當天
+  DOI           = {10.5566/NTU2018XXXXX},
+  keywords      = {虛擬電廠, 風力發電, 電動汽車, 時間序列預測, ARIMA 模型, 支持向量迴歸, 模型預測控制, 短期風速預測},
+  keywords*     = {Virtual Power Plant, Wind Power, Electric Vehicle, Time Series Prediction, ARIMA Model, Support Vector Regression, Model Predictive Control, Short-TermWind Speed Prediction},
+}
+
+% --------------------------------------------------
+% 加載套件（Include Packages）
+% --------------------------------------------------
+
+\usepackage{natbib}      % 參考文獻
+\usepackage{amsmath, amsthm, amssymb}   % 數學環境
+\usepackage{commath, mathtools}         % 數學符號
+\usepackage{ulem, CJKulem}              % 下劃線、雙下劃線與波浪紋效果
+\usepackage{booktabs}                   % 改善表格設置
+\usepackage{multirow}                   % 合併儲存格
+\usepackage{diagbox}                    % 插入表格反斜線
+\usepackage{array}                      % 調整表格高度
+\usepackage{longtable}                  % 支援跨頁長表格
+\usepackage{paralist}                   % 列表環境
+
+\usepackage{graphicx}                   % 插入圖片
+\usepackage{float}                      % 浮動位置
+
+\usepackage{siunitx}                    % 國際單位制度
+\usepackage{mhchem}                     % 化學式
+\usepackage{lscape}                     % 橫向表格
+
+% --------------------------------------------------
+% 套件設定（Packages Settings）
+% --------------------------------------------------
+\appendgraphicspath{{./figures/chapter01/}}
+\appendgraphicspath{{./figures/chapter02/}}
+\appendgraphicspath{{./figures/chapter03/}}
+\appendgraphicspath{{./figures/chapter04/}}
+\appendgraphicspath{{./figures/chapter05/}}
+\appendgraphicspath{{./figures/chapter06/}}
+\appendgraphicspath{{./figures/chapter07/}}
+\appendgraphicspath{{./figures/chapter08/}}
+\appendgraphicspath{{./figures/chapter09/}}
+\appendgraphicspath{{./figures/chapter10/}}
+\appendgraphicspath{{./figures/appendix01/}}
+\appendgraphicspath{{./figures/appendix02/}}
+
+% --------------------------------------------------
+% 客制設定（Custom Settings）
+% --------------------------------------------------
+% 單位設置
+\sisetup{group-separator = {,}}
+\DeclareSIUnit{\TWh}{{\tera\watt\hour}}
+
+% 數學符號
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}

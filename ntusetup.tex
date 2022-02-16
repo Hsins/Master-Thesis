@@ -1,0 +1,89 @@
+ % !TeX root = ./main.tex
+
+% --------------------------------------------------
+% 資訊設定（Information Configs）
+% --------------------------------------------------
+
+\ntusetup{
+  university    = {國立臺灣大學},
+  university*   = {National Taiwan University},
+  college       = {工學院},
+  college*      = {College of Engineering},
+  institute     = {工業工程學研究所},
+  institute*    = {Graduate Institute of Industrial Engineering},
+  title         = {整合電動車與風力電場之虛擬電廠收益分析},
+  title*        = {Profit Analysis of a Virtual Power Plant Consisting of a Wind Farm and Electric Vehicles},
+  author        = {彭新翔},
+  author*       = {Hsin-Hsiang Peng},
+  ID            = {R05546030},
+  advisor       = {吳文方},
+  advisor*      = {Wen-Fang Wu},
+  date          = {2021-10-01},         % 若註解掉，則預設為當天
+  oral-date     = {2021-10-01},         % 若註解掉，則預設為當天
+  DOI           = {10.6342/NTU202103859},
+  keywords      = {虛擬電廠, 風力電場, 電動車, 時間序列預測, 模型預測控制},
+  keywords*     = {Virtual Power Plant, Wind Farm, Electric Vehicle, Time Series Prediction, Model Predictive Control},
+}
+
+% --------------------------------------------------
+% 加載套件（Include Packages）
+% --------------------------------------------------
+
+% \usepackage[numbers]{natbib}            % 參考文獻
+\usepackage[square,sort&compress,comma,numbers]{natbib}
+\usepackage[normalem]{ulem}             % 下劃線、雙下劃線與波浪紋效果
+\usepackage{CJKulem}
+\usepackage{amsmath, amsthm, amssymb}   % 數學環境
+\usepackage{commath, mathtools}         % 數學符號
+\usepackage{booktabs}                   % 改善表格設置
+\usepackage{multirow}                   % 合併儲存格
+\usepackage{diagbox}                    % 插入表格反斜線
+\usepackage{array}                      % 調整表格高度
+\usepackage{longtable}                  % 支援跨頁長表格
+\usepackage{paralist}                   % 列表環境
+
+\usepackage{graphicx}                   % 插入圖片
+\usepackage{float}                      % 浮動位置
+
+\usepackage{siunitx}                    % 國際單位制度
+\usepackage[version=4]{mhchem}          % 化學式
+\usepackage{lscape}                     % 橫向表格
+\usepackage[final]{microtype}
+
+\usepackage{layouts}
+\usepackage{threeparttable}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+
+\usepackage{chngcntr}                   % 腳註編號
+\counterwithout{footnote}{chapter}
+
+% --------------------------------------------------
+% 套件設定（Packages Settings）
+% --------------------------------------------------
+% \setcitestyle{numbers}
+
+\appendgraphicspath{{./figures/chapter01/}}
+\appendgraphicspath{{./figures/chapter02/}}
+\appendgraphicspath{{./figures/chapter03/}}
+\appendgraphicspath{{./figures/chapter04/}}
+\appendgraphicspath{{./figures/chapter05/}}
+\appendgraphicspath{{./figures/chapter06/}}
+\appendgraphicspath{{./figures/appendix01/}}
+\appendgraphicspath{{./figures/appendix02/}}
+
+% --------------------------------------------------
+% 客制設定（Custom Settings）
+% --------------------------------------------------
+% 單位設置
+\sisetup{group-separator = {,}}
+\DeclareSIUnit{\Wh}{{\watt\hour}}           % 瓦時 Wh
+\DeclareSIUnit{\TWh}{{\tera\watt\hour}}     % 百萬兆瓦時 TWh
+
+% 數學符號
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
+\allowdisplaybreaks[1]
+
+% 表格條列
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
